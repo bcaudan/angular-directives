@@ -1,2 +1,2 @@
-angular-directive
-=================
+angular-directives
+==================
