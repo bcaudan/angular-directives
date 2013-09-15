@@ -5,11 +5,9 @@ describe('Directive: tabsWrapper', function () {
   // load the directive's module
   beforeEach(module('angularDirectivesApp'));
 
-  var tabsWrapper,
-    scope;
+  var tabsWrapper;
 
   beforeEach(inject(function ($rootScope, $compile) {
-    scope = $rootScope.$new();
     var html = '';
     html += '<div tabs-wrapper>';
     html += '  <ul class="nav-tabs">';
@@ -20,7 +18,7 @@ describe('Directive: tabsWrapper', function () {
     html += '  <div class="tab-pane"></div>';
     html += '</div>';
 
-    tabsWrapper = $compile(angular.element(html))(scope);
+    tabsWrapper = $compile(angular.element(html))($rootScope.$new());
   }));
 
   it('should add active class on the clicked tab', function(){
