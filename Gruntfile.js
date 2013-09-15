@@ -336,11 +336,11 @@ module.exports = function (grunt) {
   });
 
   grunt.registerTask('e2e', [
-      'clean:server',
-      'concurrent:test',
-      'autoprefixer',
-      'connect:test',
-      'karma:e2e'
+    'clean:server',
+    'concurrent:test',
+    'autoprefixer',
+    'connect:test',
+    'karma:e2e'
   ]);
 
   grunt.registerTask('test', [
