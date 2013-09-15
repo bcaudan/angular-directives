@@ -1,6 +1,12 @@
 angular-directives
 ==================
-Powered by [AngularJS generator](https://github.com/yeoman/generator-angular) and [Karma generator](https://github.com/yeoman/generator-karma). 
+Description
+-----------
+Three ways to implement a simple tab manager with AngularJS :
+* Step 1 : With AngularJS built-in directives
+* Step 2 : With some jQuery DOM manipulations
+* Step 3 : With parts of AngularJS Directive API
+
 
 Requirements
 ------------
@@ -18,3 +24,6 @@ Usage
 * Launch server : `grunt server`
 
 When server is running, application is available at : [http://localhost:9000/](http://localhost:9000/) 
+
+
+Powered by [AngularJS generator](https://github.com/yeoman/generator-angular) and [Karma generator](https://github.com/yeoman/generator-karma). 
