@@ -1,6 +1,6 @@
 describe('step3', function() {
   beforeEach(function() {
-    browser().navigateTo('/#/step3');
+    browser().navigateTo('#/step3');
   });
 
   it('should init with the active tab', function() {
