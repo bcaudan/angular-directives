@@ -1,0 +1,12 @@
+<div class="hero-unit">
+  <h4>Step 1</h4>
+  <br>
+  <ul class="nav nav-tabs" ng-init="firstTabSelected = true">
+    <li ng-click="firstTabSelected = true" ng-class="{active: firstTabSelected}"><a href="">Tab 1</a></li>
+    <li ng-click="firstTabSelected = false" ng-class="{active: !firstTabSelected}"><a href="">Tab 2</a></li>
+  </ul>
+  <div class="tab-content">
+    <div ng-show="firstTabSelected" class="tab-pane active">Content 1</div>
+    <div ng-hide="firstTabSelected" class="tab-pane active">Content 2</div>
+  </div>
+</div>
