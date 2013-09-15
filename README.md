@@ -15,11 +15,14 @@ Requirements
 * __Bower > 1.2.0__
 * Grunt
 
-Usage
+First
 -----
 * Install node dependencies : `npm install`
 * Install bower dependencies : `bower install`
 * Build project : `grunt`
+
+Usage
+-----
 * Launch unit and e2e tests : `grunt test`
 * Launch server : `grunt server`
 
