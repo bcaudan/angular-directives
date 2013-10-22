@@ -10,8 +10,8 @@ describe('Directive: tabs', function () {
   beforeEach(inject(function ($rootScope, $compile) {
     var html = '';
     html += '<tabs>';
-    html += '  <tab-pane tab="first" active="true">foo</tab-pane>';
-    html += '  <tab-pane tab="last">bar</tab-pane>';
+    html += '  <tab title="first" active="true">foo</tab>';
+    html += '  <tab title="last">bar</tab>';
     html += '</tabs>';
 
     tabs = $compile(angular.element(html))($rootScope.$new());

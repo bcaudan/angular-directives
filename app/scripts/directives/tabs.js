@@ -7,7 +7,7 @@ angular.module('angularDirectivesApp')
       replace: true,
       transclude: true,
       template: '<div><ul class="nav nav-tabs"></ul><div class="tab-content" ng-transclude></div></div>',
-      controller: ['$element', function(tabs) {
+      controller: ['$element', function(tabsElement) {
         this.registerTab = function (headerText, content, isActive) {
           function initTab(headerText, content, isActive) {
             var header = angular.element('<li><a href="">' + headerText + '</a></li>');
@@ -22,20 +22,20 @@ angular.module('angularDirectivesApp')
           }
 
           function selectThisTab(header, content) {
-            tabs.find('.active').removeClass('active');
+            tabsElement.find('.active').removeClass('active');
             header.addClass('active');
             content.addClass('active');
           }
 
           var header = initTab(headerText, content, isActive);
-          tabs.find('.nav-tabs').append(header);
+          tabsElement.find('.nav-tabs').append(header);
         };
       }]
     };
   });
 
 angular.module('angularDirectivesApp')
-  .directive('tabPane', function() {
+  .directive('tab', function() {
     return {
       restrict: 'E',
       replace: true,
@@ -43,7 +43,7 @@ angular.module('angularDirectivesApp')
       require: '^tabs',
       template: '<div class="tab-pane" ng-transclude></div>',
       link: function (scope, element, attrs, tabsController) {
-        tabsController.registerTab(attrs.tab, element, attrs.active);
+        tabsController.registerTab(attrs.title, element, attrs.active);
       }
     };
   });
