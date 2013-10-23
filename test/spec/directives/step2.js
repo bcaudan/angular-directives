@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Directive: tabsWrapper', function () {
+describe('Directive: tabs step 2', function () {
 
   // load the directive's module
   beforeEach(module('angularDirectivesApp'));
@@ -9,7 +9,7 @@ describe('Directive: tabsWrapper', function () {
 
   beforeEach(inject(function ($rootScope, $compile) {
     var html = '';
-    html += '<div tabs-wrapper>';
+    html += '<div tabs-s2>';
     html += '  <ul class="nav-tabs">';
     html += '    <li class="active"></li>';
     html += '    <li></li>';

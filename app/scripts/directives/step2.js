@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularDirectivesApp')
-  .directive('tabsWrapper', function() {
+  .directive('tabsS2', function() {
     return function(scope, tabsElement) {
       function selectThisTab(tab) {
         var tabContent = tabsElement.find('.tab-content div').eq(tab.index());
