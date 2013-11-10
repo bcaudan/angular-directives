@@ -18,6 +18,9 @@ angular.module('angularDirectivesApp', ['ngRoute'])
       .when('/step4', {
         templateUrl: 'views/step4.html'
       })
+      .when('/step5', {
+        templateUrl: 'views/step5.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
