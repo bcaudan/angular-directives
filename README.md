@@ -5,7 +5,9 @@ Description
 Three ways to implement a simple tab manager with AngularJS :
 * Step 1 : With AngularJS built-in directives
 * Step 2 : With some jQuery DOM manipulations
-* Step 3 : With parts of AngularJS Directive API
+* Step 3 : By splitting  view and model
+* Step 4 : With transclusion
+* Step 5 : With Communication between directives
 
 
 Requirements
