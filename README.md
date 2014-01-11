@@ -1,5 +1,7 @@
+[![Build Status](https://travis-ci.org/bcaudan/angular-directives.png?branch=master)](https://travis-ci.org/bcaudan/angular-directives)
 angular-directives
 ==================
+
 Description
 -----------
 Three ways to implement a simple tab manager with AngularJS :
