@@ -11,6 +11,10 @@ Five ways to implement a simple tab manager with AngularJS :
 * Step 4 : With transclusion
 * Step 5 : With Communication between directives
 
+Related articles
+----------------
+* [Initiation to angular.js directives (French)](http://blog.xebia.fr/2013/11/04/initiation-aux-directives-angularjs/)
+* [Unleash angular.js directives potential (French)](http://blog.xebia.fr/2013/11/20/liberer-le-potentiel-des-directives-angularjs/)
 
 Requirements
 ------------
